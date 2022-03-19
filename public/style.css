@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.lead {
+  font-size: 1.75rem;
+  line-height: 1.6;
+}
+
+.blink::after {
+  content: '|';
+  animation: blink 1s infinite step-start;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.typing {
+  line-height: 1.6rem;
+}
+
+code {
+  font-family: 'Source Code Pro', monospace;
+  background: #1113;
+  border-radius: .3rem;
+  padding: .1rem .3rem;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
